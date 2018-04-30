@@ -1,53 +1,32 @@
-* {
-    box-sizing: border-box;
-}
 
-#Rock {
-  color: white;
+body {
+  background: #b5b5b5;
+  background-color: #e2dddd;
 }
-.menu li:hover {
-    background-color: #0099cc;
-}
-
 /* main title Quiet Pixel art by Johnny*/
-#colorpallette, #jc {
-  color: blue;
+.title {
+  color: #4949df;
   font-family: fantasy;
 }
 /* main grid art*/
-#art {
-  display: table;
-  table-layout: auto;
-  width: 1400px;
-  border-spacing: 1px;
-  background-color: DarkGray;
-  background: grey;
+.canvas {
+display:block;
+width: 520px;
+height: 520px;
+border: 2px solid #FFEB3B;
+background: #4CAF50;
 
 }
 
-/* square art*/
-.square {
-  display: table-cell;
-  background-color: white;
-  width: 20px;
-  height: 20px;
-
-}
-/* this is the space bettween the grid and the color pallete*/
-#space{
-  margin-top: 10px;
-  border: 2px solid white;
-}
 /* this are the squares for the color picker*/
 .pen {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border: 2px solid black;
+  border: 2px solid #000000;
 }
 
 #btnClear {
-
   top: 300px;
   left: 195px;
 	height:80px;
@@ -67,7 +46,40 @@ width: auto;
 border-radius: 15% solid black;
 font-size: 50px;
 padding: 50px;
+}
 
+.johnnytest {
+  height: 500px;
+  width: 500px;
+  border: 2px #CDDC39 ;
+  background-color: #CDDC39;
+}
 
+.pixels {
+display:grid;
+grid-template-rows: inherit;
+grid-template-columns:inherit;
+border: 1px solid #332136;
+background-color: #F44336;
+width: 51px;
+height:40px;
 
 }
+html, body
+           {
+               margin: 0;
+               padding: 0;
+               width: 100%;
+               min-height: 100%;
+           }
+
+           .row
+           {
+               Width: 100%;
+               Height: 50%;
+            }
+
+           .border
+           {
+               border-bottom: 1px solid black;
+           }
